@@ -1,0 +1,25 @@
+<div class="flex flex-col items-center justify-center h-screen">
+  <div class="w-48 h-48 rounded-full bg-gray-200 flex flex-col items-center justify-center">
+    <span class="time text-3xl font-bold">
+      {{ time }}
+    </span>
+  </div>
+
+  <div class="mt-4 flex flex-row gap-2">
+    <button mat-stroked-button class="px-4 py-2" (click)="startTimer()" color="primary">
+      Start
+    </button>
+
+    <button mat-stroked-button class="px-4 py-2 text-gray-300" (click)="waitTimer()">
+      Wait
+    </button>
+
+    <button mat-stroked-button class="px-4 py-2" (click)="stopTimer()" color="warn">
+      Stop
+    </button>
+
+    <button mat-stroked-button class="px-4 py-2 text-black" (click)="resetTimer()">
+      Reset
+    </button>
+  </div>
+</div>
